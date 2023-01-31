@@ -1,0 +1,133 @@
+html {
+    
+}
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: #000066;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 18px;
+    align-items: center;
+    font-weight: 600;
+    color: white;
+    user-select: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.main_title {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 36px;
+    text-align: center;
+}
+
+.main_form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="number"] {
+    border: 5px solid white;
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    background-color:  #000066;
+    transition: all .2s linear;
+    color: white;
+    text-align: center;
+}
+
+.show_result {
+    display: inline;
+    border: 5px solid white;
+    background-color:  #000066;
+    color: white;
+    padding: 3px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.show_result:hover {
+    background-color:  white;
+    color: #000066;
+}
+
+/* Modal window */
+
+.modal_blur {
+    width: 100%;
+    height: 100%;
+    background: #000066;
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    opacity: .7;
+    transition: all .3s linear;
+    background: rgba(0, 0, 102, .1);
+
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+
+}
+.modal {
+    background-color:  #000066;
+    border: 10px solid white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+.modal_result_title {
+    font-size: 28px;
+}
+.modal_result {
+    margin: 30px 0;
+}
+.modal_integer {
+}
+.modal_word {
+}
+.modal_button {
+    display: inline;
+    border: 5px solid white;
+    background-color:  #000066;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.modal_button:hover{
+    background-color:  white;
+    color: #000066;
+}
